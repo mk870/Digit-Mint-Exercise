@@ -1,0 +1,103 @@
+.user-inputs-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 15px;
+  width: 60%;
+  margin-top: 30px;
+}
+
+.input-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.other-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 5px;
+  width: 50%;
+}
+.select-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+}
+
+.co2-levels-container {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #cecece;
+  border-radius: 6px;
+}
+.input-error{
+  text-align: center;
+  color: red;
+  font-size: 13px;
+}
+.co2-levels-number {
+  font-size: 16px;
+  margin-top: 2px;
+}
+.co2-levels-label {
+  position: absolute;
+  color: #cecece;
+  font-size: 14px;
+  top: -23px;
+  background-color: white;
+  padding: 0px 7px;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  .user-inputs-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .user-inputs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  .input-fields {
+    width: 100%;
+  }
+  .other-fields {
+    width: 100%;
+  }
+  .select-field {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .select-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .co2-levels-container {
+    width: 100%;
+  }
+}
